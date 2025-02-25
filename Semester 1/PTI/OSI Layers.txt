@@ -1,0 +1,152 @@
+OSI: model referensi yang menggambarkan bagaimana komputer berkomunikasi dalam jaringan. 
+
+Enkaptulasi--
+app layer (menyiapkan sata sesuai protokol),
+presentation layer(data dienkripsi u/ meningkatkan keamanan pengiriman/ data dibentuk ke dalam bentuk yang tak dapat dibaca selama proses transmisi berlangsung}
+session layr (mengelola pembuatan, pengendalian, dan penutupan sesi komunikasi perangkat pengirim dan server penerima)
+transportr layaer(data akan diubah menjadi segmen, dan dipecah menjadi beberapa segmen dan menambahkan informasi seperti nomor port sumber dan tujuan serta no. urut 
+(TCP: 3W HANDSHAKE-proses yg terjadi antara 2 perangkat yang ingin membentuk koneksi sebelum memulai pertukaran data:1. client ngirim sync, 2. server ngirim sync ack, 3. client ngirim ack)_tcp selesai artinya proses pertukaran data dapat terjadi.
+nw layer (segment di ubah menjadi packet dan menambahkan alamat IP pengirim dan tujuan, setelah itu mencari rute terbaik u/ packet sampai ke penerima)
+Data link layer (mentrasmisikan 2 perangkat yang berhubungan secara fisik dalam jaringan: paket diubah menjadi frame yang berisi alamat mac pengirrim dan penerima)
+physical layer (frame data tadi diubah ke dalam bentuk bit yang kemudian dikirim melalui media fisik yang dikirim ke alamat mac tujuan)
+
+ *** saat data mencapai server tujuan proses dekaptulasi pun dimulai namun dalam tujuan terbalik (physical layerJ--app layer)
+
+
+
+
+Tentu, sayang! Mari kita bicarakan tentang frame, paket, data, dan segmen. 🌟
+
+1. **Frame**:
+   - Bayangkan frame seperti surat yang dikirim melalui pos. Setiap frame adalah kotak yang berisi pesan dan alamat pengirim serta penerima.
+   - Di jaringan komputer, frame adalah unit terkecil dalam lapisan fisik (layer  Frame mengandung data, alamat MAC (Media Access Control), dan informasi pengendali lainnya.
+   - Seperti surat, frame harus sampai dengan aman ke tujuan tanpa rusak atau hilang.
+
+2. **Paket**:
+   - Paket adalah seperti bungkusan yang dikirim melalui kurir. Setiap paket berisi bagian dari pesan dan alamat tujuan.
+   - Di lapisan jaringan (layer 3), data dibagi menjadi paket-paket kecil. Setiap paket memiliki alamat IP dan informasi routing.
+   - Kurir (router) membantu mengirim paket dari satu tempat ke tempat lain.
+
+3. **Data**:
+   - Data adalah isi sebenarnya dari pesan. Bayangkan ini sebagai cerita dalam surat atau hadiah dalam bungkusan.
+   - Di lapisan transport (layer 4), data dibagi menjadi segmen. Segmen memiliki nomor urut dan informasi kontrol lainnya.
+   - Segmen membantu memastikan data tiba dengan benar dan dalam urutan yang tepat.
+
+4. **Segmen**:
+   - Segmen adalah seperti bab dalam buku. Setiap segmen berisi bagian dari cerita.
+   - Di lapisan transport, segmen mengatur aliran data antara pengirim dan penerima. Protokol seperti TCP (Transmission Control Protocol) bekerja di sini.
+   - Segmen memastikan data tiba dengan aman dan dapat diandalkan.
+
+Jadi, sayang, frame, paket, data, dan segmen semuanya berperan penting dalam mengirim pesan melalui jaringan. Semoga penjelasan ini membantu! 💌🌐
+
+Tentu, sayang! Mari Nenek jelaskan dengan bahasa yang mudah dimengerti. 🌟
+
+1. **Alamat MAC (Media Access Control)**:
+   - Bayangkan alamat MAC seperti nomor identitas unik pada kartu identitas kita. Setiap perangkat jaringan (seperti komputer, ponsel, atau printer) memiliki alamat MAC yang terpasang secara permanen.
+   - Alamat MAC membantu mengenali perangkat secara fisik. Ini seperti "nama" unik untuk setiap perangkat di jaringan.
+   - Ingat, alamat MAC tidak bisa diubah dan terikat pada perangkat itu sendiri.
+
+2. **Alamat IP (Internet Protocol)**:
+   - Alamat IP adalah alamat logis yang membantu kita menemukan perangkat di jaringan. Ini mirip dengan alamat rumah kita.
+   - Setiap perangkat yang terhubung ke internet memiliki alamat IP. Ada dua jenis alamat IP:
+     - **IPv4**: Terlihat seperti empat angka dipisahkan titik (misalnya 192.168.100.1).
+     - **IPv6**: Terlihat seperti delapan set karakter (angka dan huruf) dipisahkan titik dua (misalnya 0:0:0:0:0:ffff:c0a8:6401).
+   - Alamat IP bisa berubah tergantung lokasi dan jaringan yang kita gunakan.
+
+Jadi, sayang, alamat MAC mengidentifikasi perangkat secara fisik, sedangkan alamat IP membantu kita menghubungkan perangkat melalui jaringan. Semoga penjelasan ini membantu! 💌🌐¹²³
+
+
+**Session layer
+Tentu, sayang! Mari Nenek jelaskan dengan bahasa yang mudah dimengerti. 🌟
+
+1. **Alamat MAC (Media Access Control)**:
+   - Bayangkan alamat MAC seperti nomor identitas unik pada kartu identitas kita. Setiap perangkat jaringan (seperti komputer, ponsel, atau printer) memiliki alamat MAC yang terpasang secara permanen.
+   - Alamat MAC membantu mengenali perangkat secara fisik. Ini seperti "nama" unik untuk setiap perangkat di jaringan.
+   - Ingat, alamat MAC tidak bisa diubah dan terikat pada perangkat itu sendiri.
+
+2. **Alamat IP (Internet Protocol)**:
+   - Alamat IP adalah alamat logis yang membantu kita menemukan perangkat di jaringan. Ini mirip dengan alamat rumah kita.
+   - Setiap perangkat yang terhubung ke internet memiliki alamat IP. Ada dua jenis alamat IP:
+     - **IPv4**: Terlihat seperti empat angka dipisahkan titik (misalnya 192.168.100.1).
+     - **IPv6**: Terlihat seperti delapan set karakter (angka dan huruf) dipisahkan titik dua (misalnya 0:0:0:0:0:ffff:c0a8:6401).
+   - Alamat IP bisa berubah tergantung lokasi dan jaringan yang kita gunakan.
+
+Jadi, sayang, alamat MAC mengidentifikasi perangkat secara fisik, sedangkan alamat IP membantu kita menghubungkan perangkat melalui jaringan. Semoga penjelasan ini membantu! 💌🌐¹²³
+Tentu, sayang! Mari kita bahas lebih detail tentang **lapisan sesi** dalam model OSI (Open System Interconnection). 🌟
+
+1. **Apa Itu Lapisan Sesi?**
+   - Lapisan sesi adalah lapisan ke-5 dalam model OSI. Fungsinya adalah mengelola dan memelihara sesi komunikasi antara dua perangkat di jaringan.
+   - Bayangkan sesi ini seperti percakapan antara dua teman. Ketika mereka ingin berbicara, mereka membuka sesi. Setelah selesai, mereka menutup sesi.
+   - Lapisan sesi memastikan komunikasi yang andal dan teratur antara aplikasi pengguna akhir.
+
+2. **Apa yang Dilakukan oleh Lapisan Sesi?**
+   - **Pembukaan Sesi (Session Establishment)**:
+     - Ketika kita membuka aplikasi seperti browser web, lapisan sesi memulai sesi komunikasi dengan perangkat lain.
+     - Ini melibatkan pertukaran informasi awal, seperti mengenali perangkat dan menentukan parameter sesi.
+
+   - **Sinkronisasi (Synchronization)**:
+     - Seperti saat kita bermain musik bersama teman. Kita harus memulai dan berhenti pada waktu yang sama agar harmonis.
+     - Lapisan sesi memastikan data disinkronkan dengan benar, sehingga pesan tidak terpotong dan data tidak hilang.
+
+   - **Manajemen Token**:
+     - Bayangkan kita berada di ruang obrolan dengan teman-teman. Hanya satu orang yang boleh berbicara pada satu waktu.
+     - Lapisan sesi mengelola token (hak bicara) agar tidak ada dua pengguna yang mencoba berbicara secara bersamaan.
+
+   - **Pemulihan Sesi (Session Recovery)**:
+     - Seperti ketika kita bermain game online dan koneksi terputus. Kita ingin melanjutkan permainan dari titik terakhir.
+     - Lapisan sesi bertanggung jawab atas pemulihan sesi jika terjadi masalah, seperti koneksi terputus atau perangkat mati.
+
+3. **Contoh Penggunaan Lapisan Sesi**:
+   - Ketika kita membuka aplikasi email, lapisan sesi memulai sesi komunikasi dengan server email.
+   - Selama sesi, lapisan sesi mengelola login, logout, dan pertukaran data antara pengguna dan server.
+
+Jadi, sayang, lapisan sesi sangat penting untuk memastikan komunikasi yang aman, teratur, dan andal di jaringan. Semoga penjelasan ini membantu! 💌🌐
+Tentu! **Layer sesi** dalam model OSI bertanggung jawab untuk mengelola dan mengontrol komunikasi antara dua perangkat yang sedang berinteraksi. Mari kita bahas lebih lanjut:
+
+1. **Pengelolaan Sesi:**
+   - Layer sesi memastikan bahwa sesi komunikasi antara dua perangkat dapat dimulai, dihentikan, dan dikelola dengan baik.
+   - Ini melibatkan pembukaan, penutupan, dan pengelolaan sesi yang melibatkan pertukaran data antara perangkat.
+   - Contoh: Ketika Anda membuka aplikasi chat, sesi komunikasi dibuka. Ketika Anda menutup aplikasi, sesi ditutup.
+
+2. **Pengendalian Dialog:**
+   - Layer sesi mengatur bagaimana dialog antara perangkat terjadi.
+   - Ini termasuk mengatur urutan pertukaran data, mengidentifikasi pesan yang hilang, dan mengelola konflik.
+   - Contoh: Jika Anda mengirim pesan teks ke teman Anda, layer sesi memastikan pesan tersebut tiba dalam urutan yang benar.
+
+3. **Sinkronisasi:**
+   - Layer sesi memastikan bahwa perangkat yang berkomunikasi memiliki pemahaman yang sama tentang status sesi.
+   - Ini melibatkan sinkronisasi waktu, pengaturan checkpoint, dan pemulihan setelah kegagalan.
+   - Contoh: Jika koneksi terputus, layer sesi membantu memulihkan sesi tanpa kehilangan data.
+
+4. **Manajemen Token:**
+   - Layer sesi mengelola token atau izin untuk berbicara.
+   - Ini memastikan bahwa hanya satu perangkat yang berbicara pada satu waktu.
+   - Contoh: Dalam panggilan konferensi, hanya satu orang yang dapat berbicara pada saat tertentu.
+
+Jadi, secara singkat, komunikasi dalam layer sesi melibatkan pengelolaan sesi, pengendalian dialog, sinkronisasi, dan manajemen token. Semua ini membantu memastikan komunikasi yang efisien dan teratur antara perangkat. 🌟
+
+
+***DATA LINK LAYER
+Tentu, sayang! Mari kita analogikan **Data Link Layer** dalam model OSI dengan aktivitas pengiriman surat melalui pos. 💌
+
+1. **Alamat Pengirim dan Penerima**:
+   - Bayangkan kamu ingin mengirim surat ke temanmu. Pertama, kamu menulis alamat pengirim (alamat rumahmu) dan alamat penerima (alamat temanmu) di luar amplop.
+   - Di Data Link Layer, ini mirip dengan menambahkan alamat MAC (Media Access Control) pada frame data. Alamat MAC adalah "alamat rumah" unik untuk setiap perangkat di jaringan.
+
+2. **Pembungkusan Surat**:
+   - Setelah menulis surat, kamu memasukkannya ke dalam amplop dan menutupnya rapat.
+   - Di Data Link Layer, data (surat) dibungkus dalam *frame* yang berisi informasi seperti alamat MAC dan detil pengiriman.
+
+3. **Pengiriman Melalui Pos**:
+   - Kamu membawa surat ke kantor pos. Petugas pos mengambil surat dan mengirimkannya melalui jaringan pos.
+   - Di Data Link Layer, *frame* dikirim melalui media fisik (kabel, Wi-Fi, dll.) dari satu perangkat ke perangkat lain.
+
+4. **Penerimaan di Tujuan**:
+   - Surat tiba di kantor pos di kota temanmu. Petugas pos di sana membuka amplop dan mengirimkannya ke alamat temanmu.
+   - Di Data Link Layer, *frame* diterima oleh perangkat penerima, dan alamat MAC digunakan untuk mengantarkan data ke tujuan yang benar.
+
+5. **Pengecekan Kesalahan**:
+   - Terkadang, surat bisa rusak atau hilang selama perjalanan. Petugas pos memeriksa apakah surat masih utuh.
+   - Di Data Link Layer, ada mekanisme deteksi dan koreksi kesalahan (seperti CRC) untuk memastikan *frame* tidak rusak.
+
+Jadi, sayang, Data Link Layer bertanggung jawab atas pengemasan, pengiriman, dan penerimaan data di jaringan, mirip dengan mengirim surat melalui pos. Semoga analogi ini membantu! 💌🌐
