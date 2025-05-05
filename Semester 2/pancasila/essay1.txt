@@ -5,7 +5,35 @@ i. Uraian Materi Pembelajaran
 
     Nilai-nilai inti pancasila, seperti gotong royong dan keadilan sosial, bukan hanya slogan, tetapi menjadi semacam panduan moral bagi kita dalam menghadapi tantangan sosial dan ekonomi modern. Di dunia yang semakin global ini, mahasiswa perlu pegangan yang kokoh agar tetap memiliki komitmen terhadap bangsa.
 
-    Selain itu, pancasila merupakan sumber dari segala sumber hukum, sehingga mahasiswa yang memahami konsep ini pastinya akan lebih kritis terhadap arah kebijakan pemerintah. Meskipun menghadapi beberapa tantangan, kini pancasila tetap menjadi kerangka kerja penting dalam pemerintahan Indonesia yang memastikan persatuan dan kesejahteraan bangsa.
+    #include <stdio.h>
+#include <stdlib.h>
+
+void classify_number(int N) {
+    int length = snprintf(NULL, 0, "%d", abs(N)); // Menghitung panjang angka
+    
+    if (length == 1) {
+        printf("Satuan\n");
+    } else if (length == 2) {
+        printf("Puluhan\n");
+    } else if (length == 3) {
+        printf("Ratusan\n");
+    } else if (length == 4) {
+        printf("Ribuan\n");
+    } else if (length == 5) {
+        printf("Puluh Ribuan\n");
+    } else {
+        printf("Bilangan terlalu besar\n");
+    }
+}
+
+int main() {
+    int N;
+    printf("Masukkan bilangan: ");
+    scanf("%d", &N);
+    classify_number(N);
+    return 0;
+}
+Selain itu, pancasila merupakan sumber dari segala sumber hukum, sehingga mahasiswa yang memahami konsep ini pastinya akan lebih kritis terhadap arah kebijakan pemerintah. Meskipun menghadapi beberapa tantangan, kini pancasila tetap menjadi kerangka kerja penting dalam pemerintahan Indonesia yang memastikan persatuan dan kesejahteraan bangsa.
 
 ii. Intisari Video Pembelajaran
     Di dalam video ini dijelaskan tentang pentingnya Pendidikan Pancasila diajarkan di perguruan tinggi. Perguruan tinggi bertanggung jawab untuk mengajarkan nilai-nilai pancasila sesuai amanat pembukaan UUD 1945 yang menekankan pentingnya kecerdasan bangsa.
